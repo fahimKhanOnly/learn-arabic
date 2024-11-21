@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import { IoMdEyeOff, IoIosEye } from "react-icons/io";
 import { useState } from "react";
 import Footer from "./Footer";
+import { FcGoogle } from "react-icons/fc";
 
 
 const Login = () => {
@@ -54,8 +55,9 @@ const Login = () => {
                             <p className="text-red-500">{getErr}</p>
                         </div>
 
-                        <div className="form-control mt-6">
-                            <button className="btn btn-primary font-bold">Login</button>
+                        <div className="form-control mt-6 gap-4">
+                            <button className="btn bg-green-500 font-bold">Login</button>
+                            <button className="btn font-bold"><FcGoogle className="text-xl"/> Register with Google</button>
                         </div>
                     </form>
                     <div className="mx-auto flex flex-col gap-3 mb-5">
