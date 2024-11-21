@@ -1,0 +1,112 @@
+[
+    {
+        "Id": "1",
+        "word": "سلام",
+        "pronunciation": "salaam",
+        "meaning": "peace",
+        "part_of_speech": "noun",
+        "difficulty": "easy",
+        "Lesson_no": 1,
+        "when_to_say": "when greeting someone",
+        "example": "We say 'السلام عليكم' (As-salamu alaykum) to greet someone."
+    },
+    {
+        "Id": "2",
+        "word": "مدرسة",
+        "pronunciation": "madrasa",
+        "meaning": "school",
+        "part_of_speech": "noun",
+        "difficulty": "easy",
+        "Lesson_no": 2,
+        "when_to_say": "when talking about education",
+        "example": "The children go to المدرسة (al-madrasa) every day."
+    },
+    {
+        "Id": "3",
+        "word": "كتب",
+        "pronunciation": "kataba",
+        "meaning": "to write",
+        "part_of_speech": "verb",
+        "difficulty": "easy",
+        "Lesson_no": 3,
+        "when_to_say": "when describing the act of writing",
+        "example": "He كتب (kataba) a letter to his friend."
+    },
+    {
+        "Id": "4",
+        "word": "جميل",
+        "pronunciation": "jameel",
+        "meaning": "beautiful",
+        "part_of_speech": "adjective",
+        "difficulty": "easy",
+        "Lesson_no": 4,
+        "when_to_say": "when complimenting something",
+        "example": "The view from the mountain is جميل (jameel)."
+    },
+    {
+        "Id": "5",
+        "word": "سريعًا",
+        "pronunciation": "saree'an",
+        "meaning": "quickly",
+        "part_of_speech": "adverb",
+        "difficulty": "medium",
+        "Lesson_no": 5,
+        "when_to_say": "when describing speed",
+        "example": "He ran سريعًا (saree'an) to catch the bus."
+    },
+    {
+        "Id": "6",
+        "word": "و",
+        "pronunciation": "wa",
+        "meaning": "and",
+        "part_of_speech": "conjunction",
+        "difficulty": "easy",
+        "Lesson_no": 6,
+        "when_to_say": "to connect two ideas",
+        "example": "I have an apple و (wa) an orange."
+    },
+    {
+        "Id": "7",
+        "word": "في",
+        "pronunciation": "fee",
+        "meaning": "in",
+        "part_of_speech": "preposition",
+        "difficulty": "easy",
+        "Lesson_no": 7,
+        "when_to_say": "to indicate location or time",
+        "example": "The keys are في (fee) the bag."
+    },
+    {
+        "Id": "8",
+        "word": "حزين",
+        "pronunciation": "hazin",
+        "meaning": "sad",
+        "part_of_speech": "adjective",
+        "difficulty": "medium",
+        "Lesson_no": 8,
+        "when_to_say": "when expressing sorrow",
+        "example": "He felt حزين (hazin) after the news."
+    },
+    {
+        "Id": "9",
+        "word": "يقرأ",
+        "pronunciation": "yaqra'",
+        "meaning": "to read",
+        "part_of_speech": "verb",
+        "difficulty": "easy",
+        "Lesson_no": 9,
+        "when_to_say": "when talking about reading",
+        "example": "She يقرأ (yaqra') a book every night."
+    },
+    {
+        "Id": "10",
+        "word": "الكتاب",
+        "pronunciation": "al-kitab",
+        "meaning": "the book",
+        "part_of_speech": "noun",
+        "difficulty": "easy",
+        "Lesson_no": 10,
+        "when_to_say": "when referring to a book",
+        "example": "He is reading الكتاب (al-kitab)."
+    }
+]
