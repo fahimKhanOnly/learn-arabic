@@ -7,6 +7,10 @@ import {
 } from "react-router-dom";
 import ErrPage from './ErrPage';
 import Root from './components/Root';
+import Login from './components/Login';
+import Registration from './components/Registration';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const router = createBrowserRouter([
@@ -18,10 +22,19 @@ const router = createBrowserRouter([
       
     ]
   },
+  {
+    path: "/login",
+    element: <Login></Login>
+  },
+  {
+    path: "/registration",
+    element: <Registration></Registration>
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
+    <ToastContainer />
   </StrictMode>,
 )

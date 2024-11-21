@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 
@@ -32,7 +32,7 @@ const NavBar = () => {
                     {navItems}
                 </ul>
                 </div>
-                <img className="w-40" src={logo} alt="" />
+                <Link to="/"><img className="w-40" src={logo} /></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="gap-7 menu-horizontal px-1">
@@ -40,7 +40,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn btn-outline px-6 hover:bg-green-500 hover:text-black">Login</a>
+                <Link to="/login" className="btn btn-outline px-6 hover:bg-green-500 hover:text-black">Login</Link>
             </div>
         </div>
     );
