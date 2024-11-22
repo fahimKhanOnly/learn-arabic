@@ -8,6 +8,7 @@ export const AuthenticationContext = createContext(null);
 const AuthProvider = ({children}) => {
     const provider = new GoogleAuthProvider();
     const [user, setUser] = useState(null);
+    const [isLoading, setLoading] = useState(true);
     const createUserWithEmail = (email, password) => createUserWithEmailAndPassword(auth, email, password);
     const createUserWithGoogle = () => signInWithPopup(auth, provider);
     const signInUser = (email, password) => signInWithEmailAndPassword(auth, email, password);
@@ -16,9 +17,11 @@ const AuthProvider = ({children}) => {
     useEffect(() => {
         const unmount = onAuthStateChanged(auth, user => {
             setUser(user);
+            setLoading(false);
         })
         return () => {
             unmount();
+            setLoading(true);
         }
     }, [])
     const authMethods = {
@@ -27,6 +30,7 @@ const AuthProvider = ({children}) => {
         signInUser,
         signOutUser,
         user,
+        isLoading,
     }
     return (
         <AuthenticationContext.Provider value={authMethods}>

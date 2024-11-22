@@ -53,7 +53,7 @@ const Login = () => {
             })
         }
         else{
-            setErr("Please provide an email.");
+            setErr("Please provide a valid email.");
         }
         
     }
