@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import { auth } from "../firebase.init";
-import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, updateProfile, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 
 
 
@@ -13,6 +13,9 @@ const AuthProvider = ({children}) => {
     const createUserWithGoogle = () => signInWithPopup(auth, provider);
     const signInUser = (email, password) => signInWithEmailAndPassword(auth, email, password);
     const signOutUser = () => signOut(auth);
+    const updateInfo = (name, profile) => updateProfile(auth.currentUser, {
+        displayName: name, photoURL: profile,
+    })
 
     useEffect(() => {
         const unmount = onAuthStateChanged(auth, user => {
@@ -31,6 +34,7 @@ const AuthProvider = ({children}) => {
         signOutUser,
         user,
         isLoading,
+        updateInfo,
     }
     return (
         <AuthenticationContext.Provider value={authMethods}>

@@ -15,6 +15,8 @@ import AuthProvider from './AuthProvider/AuthProvider';
 import MyProfile from './components/MyProfile';
 import PrivateRoute from './components/PrivateRoute';
 import UpdateProfile from './components/UpdateProfile';
+import ForgetPass from './components/ForgetPass';
+import Tutorial from './components/Tutorial';
 
 
 const router = createBrowserRouter([
@@ -35,12 +37,20 @@ const router = createBrowserRouter([
     element: <Registration></Registration>
   },
   {
+    path: "/forgotPass",
+    element: <ForgetPass></ForgetPass>
+  },
+  {
     path: "/profile",
     element: <PrivateRoute><MyProfile></MyProfile></PrivateRoute>
   },
   {
     path: "/update-profile",
     element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
+  },
+  {
+    path: "/tutorials",
+    element: <PrivateRoute><Tutorial></Tutorial></PrivateRoute>
   }
 ]);
 
