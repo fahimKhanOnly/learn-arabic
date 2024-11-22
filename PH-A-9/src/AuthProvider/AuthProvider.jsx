@@ -3,7 +3,6 @@ import { auth } from "../firebase.init";
 import { createUserWithEmailAndPassword, updateProfile, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 
 
-
 export const AuthenticationContext = createContext(null);
 const AuthProvider = ({children}) => {
     const provider = new GoogleAuthProvider();

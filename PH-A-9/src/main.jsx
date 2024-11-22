@@ -17,6 +17,7 @@ import PrivateRoute from './components/PrivateRoute';
 import UpdateProfile from './components/UpdateProfile';
 import ForgetPass from './components/ForgetPass';
 import Tutorial from './components/Tutorial';
+import Learning from './components/Learning';
 
 
 const router = createBrowserRouter([
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
   {
     path: "/tutorials",
     element: <PrivateRoute><Tutorial></Tutorial></PrivateRoute>
+  },
+  {
+    path: "/start-learning",
+    element: <PrivateRoute><Learning></Learning></PrivateRoute>
   }
 ]);
 
