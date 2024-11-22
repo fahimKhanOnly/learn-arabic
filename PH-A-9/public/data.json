@@ -603,5 +603,115 @@
         "Lesson_no": 5,
         "when_to_say": "to describe a tool for writing",
         "example": "He wrote the letter with a قلم (qalam)."
+    },
+    {
+        "Id": "56",
+        "word": "إستراتيجية",
+        "pronunciation": "istiratijiyya",
+        "meaning": "strategy",
+        "part_of_speech": "noun",
+        "difficulty": "hard",
+        "Lesson_no": 6,
+        "when_to_say": "when discussing plans or methods",
+        "example": "The company developed a new إستراتيجية (istiratijiyya) for marketing."
+    },
+    {
+        "Id": "57",
+        "word": "يناقش",
+        "pronunciation": "yunaqish",
+        "meaning": "to discuss",
+        "part_of_speech": "verb",
+        "difficulty": "hard",
+        "Lesson_no": 7,
+        "when_to_say": "when talking about conversations or debates",
+        "example": "The team يناقش (yunaqish) the project details."
+    },
+    {
+        "Id": "58",
+        "word": "معقد",
+        "pronunciation": "mu'aqqad",
+        "meaning": "complicated",
+        "part_of_speech": "adjective",
+        "difficulty": "hard",
+        "Lesson_no": 8,
+        "when_to_say": "when describing something intricate or difficult",
+        "example": "The problem is very معقد (mu'aqqad)."
+    },
+    {
+        "Id": "59",
+        "word": "احتمالية",
+        "pronunciation": "ihtimaliyya",
+        "meaning": "probability",
+        "part_of_speech": "noun",
+        "difficulty": "hard",
+        "Lesson_no": 9,
+        "when_to_say": "when discussing likelihood or chance",
+        "example": "The احتمالية (ihtimaliyya) of rain is high today."
+    },
+    {
+        "Id": "60",
+        "word": "إلتزام",
+        "pronunciation": "iltizam",
+        "meaning": "commitment",
+        "part_of_speech": "noun",
+        "difficulty": "hard",
+        "Lesson_no": 10,
+        "when_to_say": "when describing responsibility or obligation",
+        "example": "He has an إلتزام (iltizam) to finish the task."
+    },
+    {
+        "Id": "61",
+        "word": "يثري",
+        "pronunciation": "yuthri",
+        "meaning": "to enrich",
+        "part_of_speech": "verb",
+        "difficulty": "hard",
+        "Lesson_no": 1,
+        "when_to_say": "when describing enhancement or improvement",
+        "example": "Reading books يثري (yuthri) knowledge."
+    },
+    {
+        "Id": "62",
+        "word": "تناقض",
+        "pronunciation": "tanakud",
+        "meaning": "contradiction",
+        "part_of_speech": "noun",
+        "difficulty": "hard",
+        "Lesson_no": 2,
+        "when_to_say": "when pointing out conflicting ideas or statements",
+        "example": "There is a تناقض (tanakud) in his story."
+    },
+    {
+        "Id": "63",
+        "word": "استنتاج",
+        "pronunciation": "istintaj",
+        "meaning": "conclusion",
+        "part_of_speech": "noun",
+        "difficulty": "hard",
+        "Lesson_no": 3,
+        "when_to_say": "when summarizing or deducing information",
+        "example": "The scientist reached an استنتاج (istintaj) after the experiment."
+    },
+    {
+        "Id": "64",
+        "word": "يستنبط",
+        "pronunciation": "yastanbit",
+        "meaning": "to deduce",
+        "part_of_speech": "verb",
+        "difficulty": "hard",
+        "Lesson_no": 4,
+        "when_to_say": "when inferring information from evidence",
+        "example": "He يستنبط (yastanbit) the answer from the clues."
+    },
+    {
+        "Id": "65",
+        "word": "تطبيقية",
+        "pronunciation": "tatbiqiyya",
+        "meaning": "applied",
+        "part_of_speech": "adjective",
+        "difficulty": "hard",
+        "Lesson_no": 5,
+        "when_to_say": "when referring to practical applications",
+        "example": "This is a تطبيقية (tatbiqiyya) science project."
     }
 ]

@@ -18,6 +18,7 @@ import UpdateProfile from './components/UpdateProfile';
 import ForgetPass from './components/ForgetPass';
 import Tutorial from './components/Tutorial';
 import Learning from './components/Learning';
+import Lesson from './components/Lesson';
 
 
 const router = createBrowserRouter([
@@ -55,7 +56,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/start-learning",
-    element: <PrivateRoute><Learning></Learning></PrivateRoute>
+    element: <Learning></Learning>
+  },
+  {
+    path: "/lessons/:Lesson_no",
+    element: <PrivateRoute><Lesson></Lesson></PrivateRoute>,
+    loader: () => fetch("data.json"),
   }
 ]);
 
