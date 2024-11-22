@@ -1,14 +1,20 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import NavBar from "./NavBar";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { IoMdEyeOff, IoIosEye } from "react-icons/io";
 import Footer from "./Footer";
 import { FcGoogle } from "react-icons/fc";
+import { AuthenticationContext } from "../AuthProvider/AuthProvider";
+import { updateProfile } from "firebase/auth";
+import { auth } from "../firebase.init";
 
 
 const Registration = () => {
     const [getErr, setErr] = useState(null);
     const [getEyeStatus, setEyeStatus] = useState(true);
+    const navigate = useNavigate();
+    const {createUserWithEmail, createUserWithGoogle} = useContext(AuthenticationContext);
+
     const registrationHandler = e => {
         e.preventDefault();
         const name = e.target.name.value;
@@ -21,12 +27,33 @@ const Registration = () => {
         }
         else{
             setErr(null);
+            createUserWithEmail(email, pass, name, profile)
+            .then(result => {
+                updateProfile(auth.currentUser, {
+                    displayName: name, photoURL: profile
+                }).then(() => {
+                    navigate("/");
+                }).catch(err => setErr(err.message));
+            })
+            .catch(err => {
+                setErr(err.message);
+            })
         }
+    }
+
+    const googleAuthHandler = () => {
+        createUserWithGoogle()
+        .then(() => {
+            navigate("/");
+        })
+        .catch(err => {
+            setErr(err.message);
+        })
     }
     return (
     <div>
         <NavBar></NavBar>
-        <div className="hero bg-base-200 h-[90vh]">
+        <div className="hero bg-base-200 pb-10 pt-4">
             <div className="w-full hero-content flex-col">
                 <h1 className="font-extrabold text-4xl">Registration</h1>
                 <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -64,10 +91,9 @@ const Registration = () => {
                         </div>
                         <div className="form-control mt-6 gap-4">
                             <button className="btn bg-green-500 font-bold">Registration</button>
-                            <button className="btn font-bold"><FcGoogle className="text-xl"/> Register with Google</button>
+                            <button onClick={googleAuthHandler} className="btn font-bold"><FcGoogle className="text-xl"/> Register with Google</button>
                         </div>
                     </form>
-
                     <div className="mx-auto flex flex-col gap-3 mb-5">
                         <p className="font-medium">Already have an account</p>
                         <Link className="btn btn-outline btn-sm hover:bg-green-500 hover:text-black" to="/Login">Login</Link>
